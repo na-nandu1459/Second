@@ -43,6 +43,7 @@ body{
 .heading span{
     color: hsl(277, 64%, 61%);
 }
+
 .para{
     color: hsla(0, 0%, 100%, 0.75);
     line-height: 1.5;
@@ -74,7 +75,7 @@ body{
     opacity: 0.35;/*specifies the transparency of an element*/
     height:48vh;
 }
-@media only screen and (max-width: 375px) {
+/*@media only screen and (max-width: 375px) {
     .grid-item{  
         flex-direction: column-reverse;
         width: 80%;
@@ -85,7 +86,7 @@ body{
         height: 100vh;
     }
     .content.col-1{
-        height: 60vh;
+        height: 75vh;
         margin-top: 0px;
         margin-bottom: 25%;
         border-bottom-right-radius: 10px;
@@ -96,13 +97,14 @@ body{
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         margin-top: 25%;
-        background-image: url("./task2imgs/image-header-mobile.jpg");/*no-repeat center/cover;*/
+        width:77%;
+        background-image: url("./task2imgs/image-header-mobile.jpg");
         box-shadow: inset 0 0 0 2000px rgb(115 46 158/70%);
     }
     .heading{
         margin-bottom: 10%;
-        font-size: 15px;
         text-align: center;
+        font: size 50px;
     }
     .para{
         text-align: center;
@@ -116,5 +118,58 @@ body{
     }
     .para-2{
         margin-left: 40px;
+    }
+    .column{
+        height: 45vh;
+    }
+}*/
+
+@media only screen and (max-width: 415px) {
+    .grid-item{  
+        flex-direction: column-reverse;
+        width: 80%;
+        height: 150vh;
+    }
+    .content{
+        width: 70%;
+        height: 100vh;
+    }
+    .content.col-1{
+        height: 75vh;
+        margin-top: 0px;
+        margin-bottom: 25%;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px; 
+        display: flex; 
+    }
+    .content.col-2{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        margin-top: 25%;
+        width:77%;
+        background-image: url("./task2imgs/image-header-mobile.jpg");/*no-repeat center/cover;*/
+        box-shadow: inset 0 0 0 2000px rgb(115 46 158/70%);
+    }
+    .heading{
+        margin-bottom: 10%;
+       /* font-size: 15px;*/
+        text-align: center;
+        font: size 50px;
+    }
+    .para{
+        text-align: center;
+    }
+    .bottom{
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-around;
+    }
+    .para-2{
+        margin-left: 40px;
+    }
+    .column{
+        height: 45vh;
     }
 }
